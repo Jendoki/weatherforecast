@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <h1>Weather Forecast</h1>
+
+    <div id="content">
+        <h3>Choose your city :</h3>
+        <form id="form">
+            <input type="text" name="city" id="city" value="" />
+            <select class="form-select" id="howmanydays">
+          <option value="1">Today</option>
+          <option value="2">2 days</option>
+          <option value="3">3 days</option>
+          <option value="4">4 days</option>
+          <option value="5">5 days</option>
+        </select>
+            <input type="submit" class="btn btn-outline-primary" value="Submit" />
+        </form>
+    </div>
+    <div id="citycountry"></div>
+    <div id="weather">
+        <div class="row" id="showweather"></div>
+    </div>
+</body>
+
+</html>
